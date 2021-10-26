@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Social Point App - Entertaiment: social networks, games, browsers, email providers and more...</title>
+
+        <script>
+            function setScreenTitle(title){
+                document.getElementById("titleScreen").innerHTML = title;
+            }
+        </script>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -21,35 +27,35 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="#home" onclick="setScreenTitle('Home')" class="nav__link active-link">
                                 <i class='bx bx-home-alt nav__icon'></i>
                                 <span class="nav__name">Home</span>
                             </a>
                         </li>
                         
                         <li class="nav__item">
-                            <a href="#social" class="nav__link">
+                            <a href="#social" onclick="setScreenTitle('Social Networks')" class="nav__link">
                                 <i class='bx bx-user nav__icon'></i>
                                 <span class="nav__name">Social</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#games" class="nav__link">
+                            <a href="#games" onclick="setScreenTitle('Games')" class="nav__link">
                                 <i class='bx bx-game nav__icon'></i>
                                 <span class="nav__name">Games</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#browsers" class="nav__link">
+                            <a href="#browsers" onclick="setScreenTitle('Browsers')" class="nav__link">
                                 <i class='bx bx-world nav__icon'></i>
                                 <span class="nav__name">Browser</span>
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#emails" class="nav__link">
+                            <a href="#emails" onclick="setScreenTitle('Emails')" class="nav__link">
                                 <i class='bx bx-envelope nav__icon'></i>
                                 <span class="nav__name">Email</span>
                             </a>
@@ -86,7 +92,7 @@
 
             <!--=============== EMAILS ===============-->
             <section class="container section section__height" id="emails">
-                <h2 class="section__title">Emails Provider</h2>
+                <h2 class="section__title">Email Providers</h2>
                 <iframe src="./sections/emails.html" style="width: 100%; height: 80%;" title="Email Providers"></iframe>
             </section>
         </main>
