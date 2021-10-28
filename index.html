@@ -1,112 +1,173 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>Social Point App - Entertaiment: social networks, games, browsers, email providers and more...</title>
+    <title>
+      Social Point App - Entertaiment: social networks, games, browsers, email
+      providers and more...
+    </title>
 
-        <script>
-            function setScreenTitle(title){
-                document.getElementById("titleScreen").innerHTML = title;
-            }
-        </script>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" id="titleScreen" class="nav__logo">Social Point</a>
+    <script>
+      function setScreenTitle(title) {
+        document.getElementById("titleScreen").innerHTML = title;
+      }
+    </script>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" id="titleScreen" class="nav__logo">Social Point</a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" onclick="setScreenTitle('Home')" class="nav__link active-link">
-                                <i class='bx bx-home-alt nav__icon'></i>
-                                <span class="nav__name">Home</span>
-                            </a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="#social" onclick="setScreenTitle('Social Networks')" class="nav__link">
-                                <i class='bx bx-user nav__icon'></i>
-                                <span class="nav__name">Social</span>
-                            </a>
-                        </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="#home"
+                onclick="setScreenTitle('Home')"
+                class="nav__link active-link"
+              >
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#games" onclick="setScreenTitle('Games')" class="nav__link">
-                                <i class='bx bx-game nav__icon'></i>
-                                <span class="nav__name">Games</span>
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a
+                href="#social"
+                onclick="setScreenTitle('Social Networks')"
+                class="nav__link"
+              >
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">Social</span>
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#browsers" onclick="setScreenTitle('Browsers')" class="nav__link">
-                                <i class='bx bx-world nav__icon'></i>
-                                <span class="nav__name">Browser</span>
-                            </a>
-                        </li>
+            <li class="nav__item">
+              <a
+                href="#games"
+                onclick="setScreenTitle('Games')"
+                class="nav__link"
+              >
+                <i class="bx bx-game nav__icon"></i>
+                <span class="nav__name">Games</span>
+              </a>
+            </li>
 
-                        <li class="nav__item">
-                            <a href="#emails" onclick="setScreenTitle('Emails')" class="nav__link">
-                                <i class='bx bx-envelope nav__icon'></i>
-                                <span class="nav__name">Email</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <li class="nav__item">
+              <a
+                href="#browsers"
+                onclick="setScreenTitle('Browsers')"
+                class="nav__link"
+              >
+                <i class="bx bx-world nav__icon"></i>
+                <span class="nav__name">Browser</span>
+              </a>
+            </li>
 
-                <img style="padding: 1%;" src="assets/img/info.png" onclick="window.location.href = '#about'" alt="" class="nav__img">
-            </nav>
-        </header>
+            <li class="nav__item">
+              <a
+                href="#emails"
+                onclick="setScreenTitle('Emails')"
+                class="nav__link"
+              >
+                <i class="bx bx-envelope nav__icon"></i>
+                <span class="nav__name">Email</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <main>
-            <!--=============== HOME ===============-->
-            <section class="container section section__height" id="home">
-                <h2 class="section__title">Home</h2>
-                <iframe src="./sections/home.html" frameBorder="0" style="width: 100%; height: 80%;" title="Social Point App - Home"></iframe>
-            </section>
+        <img
+          style="padding: 1%"
+          src="assets/img/info.png"
+          onclick="window.location.href = '#about'"
+          alt=""
+          class="nav__img"
+        />
+      </nav>
+    </header>
 
-            <!--=============== SOCIAL MEDIA ===============-->
-            <section class="container section section__height" id="social">
-                <h2 class="section__title">All Social Media</h2>
-                <iframe src="./sections/social-networks.html" frameBorder="0" style="width: 100%; height: 80%;" title="Social Media apps connection"></iframe>
-            </section>
+    <main>
+      <!--=============== HOME ===============-->
+      <section class="container section section__height" id="home">
+        <h2 class="section__title">Home</h2>
+        <iframe
+          src="./sections/home.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Social Point App - Home"
+        ></iframe>
+      </section>
 
-            <!--=============== GAMES ===============-->
-            <section class="container section section__height" id="games">
-                <h2 class="section__title">Games</h2>
-                <iframe src="./sections/games.html" frameBorder="0" style="width: 100%; height: 80%;" title="Games"></iframe>
-            </section>
+      <!--=============== SOCIAL MEDIA ===============-->
+      <section class="container section section__height" id="social">
+        <h2 class="section__title">All Social Media</h2>
+        <iframe
+          src="./sections/social-networks.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Social Media apps connection"
+        ></iframe>
+      </section>
 
-            <!--=============== BROWSER ===============-->
-            <section class="container section section__height" id="browsers">
-                <h2 class="section__title">Search Engines/Browsers</h2>
-                <iframe src="./sections/search-engines.html" frameBorder="0" style="width: 100%; height: 80%;" title="Web Browsers"></iframe>
-            </section>
+      <!--=============== GAMES ===============-->
+      <section class="container section section__height" id="games">
+        <h2 class="section__title">Games</h2>
+        <iframe
+          src="./sections/games.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Games"
+        ></iframe>
+      </section>
 
-            <!--=============== EMAILS ===============-->
-            <section class="container section section__height" id="emails">
-                <h2 class="section__title">Email Providers</h2>
-                <iframe src="./sections/emails.html" frameBorder="0" style="width: 100%; height: 80%;" title="Email Providers"></iframe>
-            </section>
+      <!--=============== BROWSER ===============-->
+      <section class="container section section__height" id="browsers">
+        <h2 class="section__title">Search Engines/Browsers</h2>
+        <iframe
+          src="./sections/search-engines.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Web Browsers"
+        ></iframe>
+      </section>
 
-            <!--=============== EMAILS ===============-->
-            <section  class="container section section__height" id="about">
-                <h2 class="section__title">About</h2>
-                <iframe src="../social-point-lite/sections/about.html" frameBorder="0" style="width: 100%; height: 80%;" title="Information"></iframe>
-            </section>
-        </main>
-        
+      <!--=============== EMAILS ===============-->
+      <section class="container section section__height" id="emails">
+        <h2 class="section__title">Email Providers</h2>
+        <iframe
+          src="./sections/emails.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Email Providers"
+        ></iframe>
+      </section>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+      <!--=============== EMAILS ===============-->
+      <section class="container section section__height" id="about">
+        <h2 class="section__title">About</h2>
+        <iframe
+          src="./sections/about.html"
+          frameborder="0"
+          style="width: 100%; height: 80%"
+          title="Information"
+        ></iframe>
+      </section>
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
