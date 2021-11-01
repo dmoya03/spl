@@ -52,7 +52,7 @@ window.addEventListener('scroll', function() {
 
     if(positionAboutSection.top >= 0 && positionAboutSection.bottom <= window.innerHeight) {
         titleBar.textContent = 'About';
-		console.log('Element is fully visible in screen');
+		console.log('About section is fully visible in screen');
 	}
 
 });
