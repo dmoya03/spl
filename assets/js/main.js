@@ -35,8 +35,8 @@ window.addEventListener('scroll', function() {
 	var element = document.querySelector('#homeSectionTitle');
 	var position = element.getBoundingClientRect();
 
-    var homeSection = document.querySelector('#homeContainer');
-    var positionHomeSection = homeSection.getBoundingClientRect();
+    var aboutSection = document.querySelector('#about');
+    var positionAboutSection = aboutSection.getBoundingClientRect();
 
 	// checking whether fully visible
 	if(position.top >= 0 && position.bottom <= window.innerHeight) {
@@ -48,6 +48,11 @@ window.addEventListener('scroll', function() {
 	if(position.top < window.innerHeight && position.bottom >= 0) {
 		console.log('Element is partially visible in screen');
         //titleBar.textContent = 'Home';
+	}
+
+    if(positionAboutSection.top >= 0 && positionAboutSection.bottom <= window.innerHeight) {
+        titleBar.textContent = 'About';
+		console.log('Element is fully visible in screen');
 	}
 
 });
