@@ -32,24 +32,25 @@ window.addEventListener('scroll', scrollHeader)
 window.addEventListener('scroll', function() {
     var titleBar = document.querySelector('#titleScreen'); 
     
-	var element = document.querySelector('#homeSectionTitle');
-	var position = element.getBoundingClientRect();
+	var bigTitleHomeSection = document.querySelector('#homeSectionTitle');
+	var positionBigTitleHomeSection = bigTitleHomeSection.getBoundingClientRect();
 
     var aboutSection = document.querySelector('#about');
     var positionAboutSection = aboutSection.getBoundingClientRect();
 
-	// checking whether fully visible
-	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+	// checking whether bigTitleHomeSection fully visible
+	if(positionBigTitleHomeSection.top >= 0 && positionBigTitleHomeSection.bottom <= window.innerHeight) {
         titleBar.textContent = '';
 		console.log('Element is fully visible in screen');
 	}
 
-	// checking for partial visibility
-	if(position.top < window.innerHeight && position.bottom >= 0) {
+	// checking bigTitleHomeSection for partial visibility
+	if(positionBigTitleHomeSection.top < window.innerHeight && positionBigTitleHomeSection.bottom >= 0) {
 		console.log('Element is partially visible in screen');
         //titleBar.textContent = 'Home';
 	}
 
+    //Checking about section fully visibility
     if(positionAboutSection.top >= 0 && positionAboutSection.bottom <= window.innerHeight) {
         titleBar.textContent = 'About';
 		console.log('About section is fully visible in screen');
