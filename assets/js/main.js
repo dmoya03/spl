@@ -10,9 +10,17 @@ function scrollActive(){
             sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-           document.getElementById('titleScreen').textContent = document.querySelector('.nav__menu a[href*=' + sectionId + ']').textContent
-           document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-           console.log('Id de seccion: '+sectionId+'')
+            if(sectionId == 'social'){
+                document.getElementById('titleScreen').textContent = 'Social Media';
+            } else if(sectionId == 'browsers'){
+               document.getElementById('titleScreen').textContent = 'Web Search';
+            } else if(sectionId == 'emails'){
+                document.getElementById('titleScreen').textContent = 'Email Platforms';
+            } else {
+               document.getElementById('titleScreen').textContent = document.querySelector('.nav__menu a[href*=' + sectionId + ']').textContent
+            }
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            console.log('Id de seccion: '+sectionId+'')
         }else{
            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
